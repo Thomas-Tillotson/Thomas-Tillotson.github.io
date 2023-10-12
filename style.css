@@ -100,13 +100,51 @@ nav ul li a:hover::after{
   font-weight: 600;
   color:#fff;
 }
-h2{
-  font-size: 25px;
-  color:#fff;
+
+.tab-titles{
+  display: flex;
+  margin: 20px 0 40px;
 }
-h3{
-  font-size: 25px;
-  color:#fff;
+
+.tab-links{
+  margin-right: 50px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+}
+
+.tab-links::after{
+  content: '';
+  width: 0;
+  height: 3px;
+  background:#0287f3;
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  transition: .5s;
+}
+
+.tab-links.active-link::after{
+  width: 50%;
+}
+
+.tab-contents ul li{
+  list-style: none;
+  margin: 10px 0;
+}
+
+.tab-contents ul li span{
+  color: #0287f3;
+  font-size: 14px;
+}
+
+.tab-contents{
+  display: none;
+}
+
+.tab-contents.active-tab{
+  display: block;
 }
 
 /* contact */

@@ -1,38 +1,40 @@
 <!DOCTYPE html>
-<html lang="eng">
+<html lang="en">
   <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE-Edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Portfolio Website</title>
     <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
   </head>
   <body>
     <section id="home">
-    <div id="header">
-      <div class="container">
-        <nav>
-          <img src="images/logo.png" class="logo">
-          <!-- --------- Nav Bar--------- -->
-          <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </nav>
-        <hr>
-        <article>
-        <div class="header-text">
-          <p>Full Stack Student</p>
-          <h1>Hi, I'm <span>Thomas</span><br>Tillotson from Greenville, SC.</h1>
-        </article>
+      <div id="header">
+        <div class="container">
+          <nav>
+            <img src="images/logo.png" class="logo" alt="logo">
+              <!--  Nav Bar -->
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </nav>
+          <hr>
+            <article>
+              <div class="header-text">
+              <p>Full Stack Student</p>
+              <h1>Hi, I'm <span>Thomas</span><br>Tillotson from Greenville, SC.</h1>
+              </div>
+            </article>
+        </div>
       </div>
-    </div>
     </section>
-      <!-- ----------about--------- -->
-      <section id="about">
-      <main>
-      <div id="about">
+      <!-- about -->
+     
+    <main>
+    <section id="about">
+      <div id="about-1">
         <div class="container">
           <div class="row">
             <div class="about-col-1">
@@ -45,40 +47,48 @@
                 with a bachelors degree in computer science. Currently I am working in Tech Sales at TD Synnex,
                 but I have a dream of becoming a fulltime software developer. As I am working full time, 
                 I also am studying fullstack development at Thinkful! </p> <br>
-              <h2 class="skills-list">Skills to be learned during my course</h2><br>
-              <ol>
-                <li>Frontend Web Development</li>
-                <li>Backend Web Development</li>
-                <li>Proficiency in Full Stack by the end of this Course</li>
-              </ol>
-              <br>
-              <h3>Things I enjoy doing in my free time</h3>
-              <ul>
-                <li>Hiking</li>
-                <li>Spending time with family</li>
-                <li>Gaming</li>
-                <li>Learning new things</li>
-              </ul>
-                
+
+                <div class="tab-titles">
+                  <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                  <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                  <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                  <ul>
+                    <li><span><strong>FrontEnd</strong></span><br>HTML/CSS/JavaScript</li>
+                    <li><span><strong>BackEnd<strong></span><br>Node/Python</li>
+                  </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                  <ul>
+                    <li><span><strong>N/A</strong></span><br></li>
+                  </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                  <ul>
+                    <li><span><strong>College</strong></span><br>Limestone University, Bachelors in CS</li>
+                    <li><span><strong>Thinkful</strong></span><br>Fullstack Engineering</li>
+                  </ul>
+                </div>
             </div>
           </div>
         </div>
       </div>
-      </main>
       </section>
+    </main>
       <!-- contact-->
       <hr>
       <section id="contact">
-      <div id="contact">
+      <div id="contact-1">
         <div class="container">
           <div class="row">
             <div class="contact-left">
               <h1 class="sub-title">Contact</h1>
-              <a href="https://www.linkedin.com/in/thomas-tillotson-a8b4a4205/" id="linkedIn">LinkedIn</a><br><br>
-              <a href="https://github.com/Thomas-Tillotson" id="gitHub">GitHub</a>
+              <a href="https://www.linkedin.com/in/thomas-tillotson-a8b4a4205/" id="linkedIn" target="_blank">LinkedIn</a><br><br>
+              <a href="https://github.com/Thomas-Tillotson" id="gitHub" target="_blank">GitHub</a>
               <p>Phone: 864-905-1436</p>
               <br>
-              <a href="mailto:tcbt2000@gmail.com" id="Email">Email Me!</p>
+              <a href="mailto:tcbt2000@gmail.com" id="Email" target="_blank">Email Me!</a>
             </div>
           </div>
         </div>
